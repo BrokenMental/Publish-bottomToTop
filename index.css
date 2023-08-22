@@ -1,0 +1,45 @@
+.btt-card-outline {
+    height: 50px;
+    width: 100%;
+}
+
+.btt-card-inline {
+    position: relative;
+    border: 1px solid;
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.btt-card-inline-text {
+    background: white;
+    position: absolute;
+    left: 0;
+
+    display: none;
+    padding-left: 10px;
+    animation: moveBottomToTop 5s;
+}
+
+.btt-card-inline-text:nth-child(1) {
+    display: block;
+}
+
+@keyframes moveBottomToTop {
+    0% {
+        bottom: -50px;
+    }
+
+    10% {
+        bottom: 0;
+    }
+
+    90% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 50px;
+    }
+}
