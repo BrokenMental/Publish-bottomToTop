@@ -1,11 +1,11 @@
 .btt-card-outline {
-    height: 50px;
+    max-height: 25px;
+    height: 100%;
     width: 100%;
 }
 
 .btt-card-inline {
     position: relative;
-    border: 1px solid;
     height: 100%;
     width: 100%;
     white-space: nowrap;
@@ -13,13 +13,20 @@
 }
 
 .btt-card-inline-text {
+    margin: 0;
     background: white;
     position: absolute;
     left: 0;
+    cursor: pointer;
 
     display: none;
     padding-left: 10px;
-    animation: moveBottomToTop 5s;
+    bottom: -25px;
+    animation: moveBottomToTop 5.2s;
+
+    &:hover {
+        color: #4B78A8;
+    }
 }
 
 .btt-card-inline-text:nth-child(1) {
@@ -28,7 +35,7 @@
 
 @keyframes moveBottomToTop {
     0% {
-        bottom: -50px;
+        bottom: -25px;
     }
 
     10% {
@@ -40,6 +47,6 @@
     }
 
     100% {
-        bottom: 50px;
+        bottom: 25px;
     }
 }
